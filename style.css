@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E0FFFF;
+  font-family: 'Lobster', cursive;
+}
+
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1{
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 3pt;
+  font-size: 40px;
+  color: #191970;
+}
+
+.container .form{
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .form input{
+  width: 550px;
+  height: 50px;
+  border: 2px solid #191970;
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+::placeholder{
+  padding: 10px 15px;
+  font-size: 20px;
+}
+
+.container .form .add{
+  width: 50px;
+  height: 50px;
+  background: url(img/plus.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid #191970;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+}
+
+h2{
+  text-align: center;
+  margin-top: 20px;
+  letter-spacing: 3pt;
+  font-size: 25px;
+  color: #191970;
+}
+
+.item{
+  width: 50%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 30px;
+  border: 2px solid #191970;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.item .description{
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
+  padding-left: 10px;
+  line-height: 50px;
+}
+
+.item .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item .btn .btn-end{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.item.checked{
+  background-color: #C0C0C0;
+  opacity: 0.5;
+  text-decoration: line-through;
+} 
+
+.item.delition{
+  animation: opacity 1s ease-in-out;
+}
+
+.item .btn .btn-clear{
+  width: 30px;
+  height: 30px;
+  background: url(img/cross.png);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid #FF0000;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 10px;
+}
+
+@keyframes opacity{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
